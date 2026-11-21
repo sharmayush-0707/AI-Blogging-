@@ -1,0 +1,35 @@
+{
+  "name": "ai-blogging-platform",
+  "version": "1.0.0",
+  "description": "AI-Powered Blogging Platform with Markdown Editor, OpenAI Suggestions, Real-Time SEO Analytics, Subscriptions & SSR",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": [
+    "blog",
+    "ai",
+    "openai",
+    "seo",
+    "monetization",
+    "ssr",
+    "react",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^10.0.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.2"
+  }
+}
